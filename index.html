@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Simple paint app</title>
+</head>
+<body>
+    
+<div class="container">
+    <div class="tools-area">
+        <div class="tools">
+            <div class="eraser">
+                <i class="fa-solid fa-eraser"></i>
+                <label>eraser</label>
+            </div>
+        
+            <div class="brush active">
+                <i class="fa-solid fa-brush"></i>
+                <label>brush</label>
+            </div>
+            <div class="color">
+                <i class="fa-sharp fa-solid fa-palette"></i>
+                <label>choose color</label>
+                <input type="color" id="color-picker">
+            </div>
+            <input type="range" id="brush_width" min="1" max="10">
+        </div>
+        <div class="buttons">
+           <button class="save">save</button> 
+           <button class="clear">clear</button>
+        </div>
+    </div>
+    <div class="draw-area">
+        <canvas></canvas>
+    </div>
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+

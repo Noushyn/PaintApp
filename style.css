@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins" , sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #4a98f7;
+}
+
+.container{
+    width: 800px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.tools-area{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 0 15px;
+}
+
+.tools{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tools .color{
+    display: flex ;
+    align-items: center;
+}
+
+input[type= "color"]{
+    border: none ;
+    width: 20px;
+    height: 15px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+input[type= "color"]::-webkit-color-swatch-wrapper{
+    padding: 0;
+}
+
+input[type= "color"]::-webkit-color-swatch{
+    border: 2px solid lightgray;
+}
+
+
+label , i{
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.buttons button{
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.buttons .save{
+    background-color: #4a98f7;
+    color: #fff;
+}
+
+.buttons .clear:hover{
+background-color: lightgray;
+}
+
+.draw-area canvas{
+    width: 100%;
+    height: 450px;
+}
+
+.active{
+    color: #4a98f7;
+}
